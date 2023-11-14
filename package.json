@@ -1,7 +1,26 @@
 {
-  "name": "@twonarly/ui",
-  "version": "0.1.0",
+  "name": "twonarly-ui",
+  "description": "Twonarly (Beau Hawkinson) design system and library",
+  "version": "0.1.1",
   "license": "MIT",
+  "main": "build/ui.js",
+  "module": "build/ui.mjs",
+  "types": "build/ui.d.ts",
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Twonarly1/twonarly-ui"
+  },
+  "exports": {
+    ".": {
+      "types": "./build/ui.d.ts",
+      "require": "./build/ui.js",
+      "import": "./build/ui.mjs"
+    },
+    "./index.css": "./build/ui.css"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,21 +31,22 @@
     "changeset": "changeset",
     "release": "bun run build && changeset publish"
   },
-  "dependencies": {
-    "@ark-ui/react": "^1.0.0",
-    "@park-ui/tailwind-plugin": "^0.13.0",
-    "@tailwindcss/typography": "^0.5.10",
-    "next": "14.0.2",
+  "resolutions": {
+    "@zag-js/store": "^0.21.0"
+  },
+  "peerDependencies": {
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@ark-ui/react": "^1.0.0",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.2",
     "@commitlint/cli": "^18.4.1",
     "@commitlint/config-conventional": "^18.4.0",
     "@commitlint/types": "^18.4.0",
     "@omnidev/knit": "^0.1.2",
+    "@park-ui/tailwind-plugin": "^0.13.0",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
@@ -34,6 +54,7 @@
     "@storybook/nextjs": "^7.5.3",
     "@storybook/react": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -41,7 +62,10 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
     "eslint-plugin-storybook": "^0.6.15",
+    "next": "14.0.2",
     "postcss": "^8",
+    "react": "^18",
+    "react-dom": "^18",
     "storybook": "^7.5.3",
     "storybook-dark-mode": "^3.0.1",
     "tailwindcss": "^3.3.0",
