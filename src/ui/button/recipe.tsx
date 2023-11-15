@@ -2,7 +2,6 @@ import { tv } from "tailwind-variants";
 
 export const buttonStyles = tv({
   base: "cursor-pointer disabled:cursor-not-allowed disabled:text-disabled rounded-md text transition-all duration-300 ease-in-out",
-  // base: "button",
   defaultVariants: {
     variant: "solid",
     size: "md",
@@ -17,12 +16,6 @@ export const buttonStyles = tv({
         "bg-disabled border border-disabled text-disabled cursor-not-allowed",
       link: "hover:text-primary hover:underline",
     },
-    // variant: {
-    //   solid: "button--variant_solid",
-    //   outline: "button--variant_outline",
-    //   ghost: "button--variant_ghost",
-    //   link: "button--variant_link",
-    // },
     size: {
       xs: "text-xs px-2 py-0.5",
       sm: "text-sm px-3 py-1",
