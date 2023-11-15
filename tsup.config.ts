@@ -21,7 +21,6 @@ const spawnProcessOptions: SpawnSyncOptions = {
 const tsupConfig = defineTsupConfig({
   entry: {
     ui: "src/index.ts",
-    next: "src/index.next.ts",
   },
   // TODO enable Rollup tree-shaking, temporarily disabled to allow properly injecting `use client` directive banner (Rollup tree-shaking removes it); track https://github.com/egoist/tsup/issues/835
   // treeshake: true,

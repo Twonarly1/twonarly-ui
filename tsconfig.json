@@ -1,25 +1,24 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["dom", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "declaration": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
+    "noEmit": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": "src",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "outDir": "build"
   },
-  "include": ["src", "*.config.ts", ".storybook/**/*.ts"],
+  "include": ["src", "*.config.ts", "*.config.cjs", ".storybook/**/*.ts"],
   "exclude": ["node_modules"]
 }

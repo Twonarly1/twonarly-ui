@@ -1,7 +1,7 @@
 import { ark } from "@ark-ui/react";
 import { VariantProps } from "tailwind-variants";
 import { buttonStyles } from "./recipe";
-import { styled } from "lib/util";
+import { styled } from "lib/util/styled";
 
 import type { HTMLArkProps } from "@ark-ui/react";
 

@@ -1,7 +1,7 @@
 {
   "name": "twonarly-ui",
   "description": "Twonarly (Beau Hawkinson) design system and library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "build/ui.js",
   "module": "build/ui.mjs",
@@ -22,10 +22,9 @@
     "./index.css": "./build/ui.css"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "dev": "bun storybook",
+    "build": "tsup",
+    "lint": "",
     "storybook": "storybook dev --quiet --no-open -p 6006",
     "build-storybook": "storybook build",
     "changeset": "changeset",
